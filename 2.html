@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <title>
+              from
+         </title>
+           <link rel="stylesheet"href="2.css">
+     </head>
+        <body>
+          <div class="body">
+           <div class="main">
+              <div class="buttons">
+               <button class="signup">Signup</button>
+                <button class="login">login</button>
+              </div>
+               <div class="form1">
+                       <form name="myform1">
+                           <h1>Log in</h1>
+                            <h2>Username:</h2>
+                            <input type="text"class="first"><br><br>
+                            <h2>Email:</h2>
+                            <input type="text"class="first"placeholder="asd@gmail.com"><br><br>
+                            <h2>Password:</h2>
+                            <input type="password"class="first">
+                       </form>
+                       <div class="icon"></div>
+                </div>
+                <div class="form2">
+                  <form name="myform2">
+                     <h2>First name:</h2>
+                     <input type="text"class="first"><br><br>
+                     <h2>Last name:</h2>
+                     <input type="text"class="first"><br><br>
+                     <h2>Email:</h2>
+                     <input type="text"class="first"placeholder="asd@gmail.com"><br><br>
+                     <h2>Phone number:</h2>
+                     <input type="number"class="first">
+                </form>
+                </div>
+             </div>
+         </div>
+           <script src="jquery.js"></script>
+           <script>
+              $(document).ready(function(){
+               $(".form2").hide();
+               $(".login").hide();
+               $(".body").css("background-color","#1d2f6f");
+               $(".login").click(function(){
+                  $(".body").css("background-color","#1d2f6f");
+                  $(".login").hide();
+                  $(".signup").show();
+                  $(".form1").show();
+                  $(".form2").hide();
+               });
+               $(".signup").click(function(){
+                  $(".body").css("background-color","#331B3F");
+                  $(".signup").hide();
+                  $(".login").show();
+                  $(".form2").show();
+                  $(".form1").hide();
+               });
+              });
+           </script>
+        </body>
+</html>
